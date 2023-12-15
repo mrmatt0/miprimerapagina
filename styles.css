@@ -1,0 +1,331 @@
+body {
+    background-color: rgb(39, 39, 39);
+    color: rgb(155, 155, 155);
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+p{
+    text-align: justify;
+}
+
+.condicional{
+    visibility: hidden;
+}
+
+section {
+    padding: 1%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a{
+    color: cyan;
+    text-decoration: none;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    display: block;
+    color: cyan;
+}
+
+#título-acerca-de,
+#título-trabajos,
+#título-contacto{
+    text-align: center;
+    color: white;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i {
+    padding: 2em;
+}
+
+header nav{
+    padding: 2em;
+}
+
+header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    background: rgb(39, 39, 39);
+    text-align: center;
+    top: 70px;
+    left: 0%;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+header nav ul Li{
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    line-height: 30px;
+}
+
+.navbar.active {
+    height: 100vh;
+    display: block;
+    text-align: center;
+}
+
+.seccion-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acerca-de {
+    order: 2;
+}
+
+.acerca-imagen {
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+#imagen-personal{
+    border-radius: 100%;
+    width: 30%;
+}
+
+#imagen-carrusel{
+    border-radius: 5%;
+    width: 80%;
+}
+
+.seccion-2{
+    display: flex;
+    justify-content: center;
+}
+
+.trabajos-orden{
+    margin: 5px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+#imagen-trabajos{
+    border-radius: 5%;
+    width: 95%;
+}
+
+.trabajo-1,
+.trabajo-2,
+.trabajo-3 {
+    width: 95%;
+    padding-bottom: 10%;
+}
+
+#subtítulo-trabajos1,
+#subtítulo-trabajos2,
+#subtítulo-trabajos3 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.parrafo3{
+    padding: 10px;
+    margin: 0;
+}
+
+section div div a {
+    padding-left: 10px;
+}
+
+.seccion-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444444;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  .form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+
+  #alertas{
+    color: red;
+    text-align: center;
+  }
+
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+footer ul{
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+
+    .checkbtn {
+        display: none;
+    }
+
+    header nav ul,
+    .navbar.active {
+        display: flex;
+        gap: 1.5em;
+        padding: 0,5em;
+        position:initial;
+        width: auto;
+        height: auto;
+        background: black;
+    }
+
+    header nav ul Li{
+        display:flex;
+        margin:auto;
+        line-height: auto;
+    }
+
+    .seccion-1{
+        flex-direction: unset;
+    }
+
+    .acerca-de {
+        order: 1;
+    }
+
+    .acerca-imagen{
+        order: 2;
+    }
+
+    #imagen-personal{
+        width: 100%;
+    }
+
+    .trabajo-1,
+    .trabajo-2,
+    .trabajo-3 {
+        width: 45%;
+    }   
+
+    .form-row {
+        flex-direction: row;
+        align-items:center;
+        margin-bottom: 20px;
+      }
+      .form-row input[type="text"],
+      .form-row input[type="email"] {
+        width: 300px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+          width: 300px;
+      }
+      
+      .form-row button {
+          margin-left: 150px;
+      }
+
+    footer ul{
+        visibility: visible;
+        display: flex;
+        gap: 1.5em;
+        padding: 0,5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .trabajo-1,
+    .trabajo-2,
+    .trabajo-3 {
+        width: 30%;
+    }  
+}
